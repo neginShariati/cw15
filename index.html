@@ -9,45 +9,45 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
+    <div class="container d-flex justify-content-center " >
+        <div class="wrapper ">
             <div class="result">
-                <input type="text" id="res">
+                <input type="text" id="res" placeholder="0">
             </div>
             <div class="">
-                <div><input type="button" class="bg-danger text-white" value="C">
+                <div><input type="button" class="bg-danger text-white "  value="C" onclick="clearValue()">
                     Javascript Calculator</div>
                 <div>
                     <form>
                         <div>
-                            <input type="button" value="7">
-                            <input type="button" value="8">
-                            <input type="button" value="9">
-                            <input type="button" value="+">
-                            <input type="button" value="|X|">
-                            <input type="button" value="ce">
+                            <input type="button" value="7" name="b7" onclick="addCalculate(b7.value)">
+                            <input type="button" value="8" name="b8" onclick="addCalculate(b8.value)">
+                            <input type="button" value="9" name="b9" onclick="addCalculate(b9.value)">
+                            <input type="button" value="+" name="p" onclick="addCalculate(p.value)">
+                            <input type="button" value="|X|" name="x" onclick="mathToCalculate (p.value)">
+                            <input type="button" value="ce"  name="p" onclick="mathToCalculate (p.value)">
                         </div>
                         <div>
-                            <input type="button" value="4">
-                            <input type="button" value="5">
-                            <input type="button" value="6">
-                            <input type="button" value="√">
-                            <input type="button" value="fl">
-                            <input type="button" value="ce">
+                            <input type="button" value="4" name="b4" onclick="addCalculate(b4.value)">
+                            <input type="button" value="5" name="b5" onclick="addCalculate(b5.value)">
+                            <input type="button" value="6" name="b6" onclick="addCalculate(b6.value)">
+                            <input type="button" value="-" name="minuse" onclick="addCalculate(minuse.value)">
+                            <input type="button" value="√"  name="p" onclick=" mathToCalculate(p.value)">
+                            <input type="button" value="fl"  name="p" onclick=" mathToCalculate(p.value)">
                         </div>
                         <div>
-                            <input type="button"  value="1">
-                            <input type="button"  value="2">
-                            <input type="button"  value="3">
-                            <input type="button"  value="*">
-                            <input type="button"  value="r">
-                            <input type="button"  value="^">
+                            <input type="button"  value="1" name="b1" onclick="addCalculate(b1.value)">
+                            <input type="button"  value="2" name="b2" onclick="addCalculate(b2.value)">
+                            <input type="button"  value="3" name="b3" onclick="addCalculate(b3.value)">
+                            <input type="button"  value="*" name="m" onclick="addCalculate(m.value)">
+                            <input type="button"  value="r"  name="p" onclick="mathToCalculate (p.value)">
+                            <input type="button"  value="^"  name="p" onclick="mathToCalculate (p.value)">
                         </div>
                         <div> 
-                            <input type="button" value="0">
-                            <input type="button" value=".">
-                            <input type="button" value="/">
-                            <input type="button" value="=" class="bg-success text-white">
+                            <input type="button" value="0" name="b0" onclick="addCalculate(b0.value)">
+                            <input type="button" value="."  name="p" onclick="addCalculate(p.value)">
+                            <input type="button" value="/" name="d" onclick="addCalculate(d.value)">
+                            <input type="button" value="=" class="bg-success text-white" id="equal"  onclick="calculate()">
                         </div>
                        
                     </form>
