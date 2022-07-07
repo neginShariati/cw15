@@ -1,15 +1,24 @@
+body{
+   background-color: #ecedef;
+}
 input[type="button"]{
     border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: 3px;
     border-style: none;
+    
+}
+
+input[type="button"]:hover,
+input[type="text"]:hover{
+    box-shadow: 2px 2px 2px rgb(213, 233, 240);
 }
 
 .result {
    background-color: #7FFFD4;
     height: 100px;
-    width: 355px;
+    width: 390px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     
@@ -22,5 +31,21 @@ input[type="button"]{
     border: none;
 
 }
+form{
+    /* background-color: #fff; */
+    border-radius: 10px;
 
+}
 
+.wrapper{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    margin-top: 6rem;
+
+}
+
+.form-wrapper{
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+
+}
