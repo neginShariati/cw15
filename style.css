@@ -1,0 +1,21 @@
+input[type="button"]{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    border-style: none;
+}
+
+.result {
+   background-color: #7FFFD4;
+    height: 100px;
+    width: 355px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+#res{
+    background-color: #7FFFD4;
+
+}
